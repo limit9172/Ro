@@ -131,7 +131,7 @@ const alertContainer = document.getElementById('alert-container');
 
 try {
     if (!API_KEY || API_KEY.includes("YOUR_API_KEY")) {
-        throw new Error("API Key belum diatur di alipai.js.");
+        throw new Error("API Key belum diatur di index.js.");
     }
     const genAI = new GoogleGenerativeAI(API_KEY);
     const generationConfig = {
@@ -151,7 +151,7 @@ try {
 }
 
 function initializeApp() {
-    const savedHistoryJSON = localStorage.getItem('alip-ai-history');
+    const savedHistoryJSON = localStorage.getItem('zenthic-ai-history');
     const savedHistory = savedHistoryJSON ? JSON.parse(savedHistoryJSON) : [];
     chat = generativeModel.startChat({ history: savedHistory, systemInstruction: SYSTEM_INSTRUCTION });
 
@@ -175,7 +175,7 @@ function initializeApp() {
         renderInitialUI();
     }
     setupEventListeners();
-    const savedTheme = localStorage.getItem('alip-ai-theme') || 'dark';
+    const savedTheme = localStorage.getItem('zenthic-ai-theme') || 'dark';
     applyTheme(savedTheme);
     promptInput.value = '';
     promptInput.style.height = 'auto';
