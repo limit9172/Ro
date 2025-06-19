@@ -951,7 +951,7 @@ function createThinkingBlock() {
     thinkingBlock.className = 'thinking-block';
     const header = document.createElement('div');
     header.className = 'thinking-header';
-    header.textContent = 'Alip Gek Miker...';
+    header.textContent = 'zenthic';
 
     const thinkingContent = document.createElement('div');
     thinkingContent.className = 'thinking-content';
