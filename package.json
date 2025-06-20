@@ -5,18 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "postinstall": "npm install --save-dev typescript @types/react @types/node"
+    "start": "next start"
   },
   "dependencies": {
     "next": "13.5.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
+    "react-dom": "18.2.0",
     "typescript": "^5.4.5",
     "@types/react": "^18.2.45",
     "@types/node": "^20.11.24"
   }
 }
-
