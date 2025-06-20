@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "npm install --save-dev typescript @types/react @types/node"
   },
   "dependencies": {
     "next": "13.5.6",
