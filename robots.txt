@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zenith-ai-eta.vercel.app/sitemap.xml
