@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 const limiter = new Map();
 
 export function middleware(req: NextRequest) {
-  const ip = req.ip ?? "anonymous";
+  const ip = req.headers.get("x-real-ip") ?? "anonymous";
   const now = Date.now();
   const previous = limiter.get(ip) || 0;
 
