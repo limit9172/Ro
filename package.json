@@ -8,3 +8,8 @@
   "react": "...",
   "react-dom": "..."
 }
+"devDependencies": {
+  "typescript": "^5.4.5",
+  "@types/react": "^18.2.45",
+  "@types/node": "^20.11.24"
+}
