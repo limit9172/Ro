@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { Chess } from 'chess.js';
 
-const API_KEY = "AIzaSyA12o-8MdQijs2xb4hfJWbObxgzaBZIti0";
+const API_KEY = "AIzaSyA5tdHVNBSUvYMw8g9U0SxH-CraUq_5RMA"; 
 const MODEL_NAME = "gemini-1.5-flash-latest";
 const SYSTEM_INSTRUCTION = {
     parts: [{
